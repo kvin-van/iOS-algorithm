@@ -45,20 +45,10 @@ class ViewController: UIViewController {
         }
         //初始化返回值  因为需要比较最小值 所以初始化为INT_MAX
         var ret : Int = Int.max
-        /* 一层一层楼进行排查，
-         * 从第一层1开始遍历到最后一层n。
-         */
+ 
         for i  in 1...n{
-            /* 在当前楼层i处鸡蛋破了，
-             * 那么需要递归遍历剩下的1..i-1层共i-1层，
-             * 鸡蛋个数也需要减1变为k-1个。
-             */
+  
             let broken  = numberOfTimes( k - 1, i - 1);
-            
-            /* 在当前楼层i处鸡蛋没破，
-             * 那么需要递归遍历剩下的i+1...n层共n-i层，
-             * 鸡蛋个数不需要减1还为k个。
-             */
             let notbroken  = numberOfTimes( k , n - i);
             /* 考虑到题目要求最坏情况下，则需要取两者中的较大值 */
             if broken > notbroken {
@@ -95,11 +85,11 @@ class ViewController: UIViewController {
             var low  = 1  //记录最低楼层
             var high = n
 //            var ret : Int = Int.max //记录每次返回的最小值
-            while low+1 < high {  //当鸡蛋2个或者超过2个的时候 第一次肯定是二分法扔 从楼层中间扔
+            while low+1 < high {
                 let x = (low + high)/2
                 //然后套用公式
-                let t1 = self.numberOfTimes2(k-1, x-1)// 碎了
-                let t2 = self.numberOfTimes2(k, n-x) // 没碎
+                let t1 = self.numberOfTimes2(k-1, x-1)
+                let t2 = self.numberOfTimes2(k, n-x)
                 
                 if t1<t2{ //没碎的次数会比较多
                     low = x
@@ -112,10 +102,6 @@ class ViewController: UIViewController {
                     high = x
                 }
             }
-            //! 我们找到最佳的投放鸡蛋的楼层后，开始计算
-            //! 1. 在left扔鸡蛋，计算  f 在 left 下方 和 在上方的 最坏的情况，也就是求最大值
-            //! 2. 同理，在 right 扔鸡蛋，计算  f 在 right 下方 和 在上方的 最坏的情况，也就是求最大值
-            //! 3. 最后，我们拿到其中的最小值，那就是我们要求的最小步骤，加上1，也就是本次的操作数。
             ans = 1 + min(max(numberOfTimes2(k - 1, low - 1), numberOfTimes2(k, n - low)), max(numberOfTimes2(k - 1, high - 1), numberOfTimes2(k, n - high)))
         }
         

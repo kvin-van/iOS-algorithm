@@ -19,15 +19,15 @@
         // 遍历链表
         while (current != nil) {  // 注意始终保持  节点负值
             // 记录下一个结点
-            Node *temp = current.next;  // ⚠️临时取2
+            Node *temp = current.next;
             // 当前结点的next指向新链表头部
-            current.next = newH;    // ⚠️当前取 null 节点
+            current.next = newH;
             // 更改新链表头部为当前结点
 //            newH.value = p.value;
 //            newH.next = p.next;
-            newH = current;      //  ⚠️新取1
+            newH = current;
             // 移动p指针
-            current = temp;     //   当前⚠️取2
+            current = temp;
         }
     
         // 返回反转后的链表头结点

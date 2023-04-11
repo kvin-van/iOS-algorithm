@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         return ""
     }
     
-    // MARK: -  打印二进制整数   关键点 先取余再除2
+    // MARK: -  打印二进制整数
     func printIntNumber(no : Int) -> String
     {
         if no == 0{
@@ -70,8 +70,8 @@ class ViewController: UIViewController {
         var i = no
         var string : String = ""
         while i>0{
-            let last = String(i%2)  //取余
-            i = i/2   //关键 十进制转二进制就是不断的除2
+            let last = String(i%2)
+            i = i/2
             string.insert(contentsOf: last, at: string.startIndex)
         }
         
