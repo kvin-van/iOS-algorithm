@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 //        print("最少次数：\(self.numberOfTimes2(2, 100)) 次")
 //        print("最少次数：\(self.numberOfTimes2(20, 110)) 次")
         
+        
         //背包问题
 //        var some1 : Something {
 //            .init(value: 3, weight: 1)
@@ -70,16 +71,9 @@ class ViewController: UIViewController {
          * 从第一层1开始遍历到最后一层n。
          */
         for i  in 1...n{
-            /* 在当前楼层i处鸡蛋破了，
-             * 那么需要递归遍历剩下的1..i-1层共i-1层，
-             * 鸡蛋个数也需要减1变为k-1个。
-             */
+
             let broken  = numberOfTimes( k - 1, i - 1);
-            
-            /* 在当前楼层i处鸡蛋没破，
-             * 那么需要递归遍历剩下的i+1...n层共n-i层，
-             * 鸡蛋个数不需要减1还为k个。
-             */
+
             let notbroken  = numberOfTimes( k , n - i);
             /* 考虑到题目要求最坏情况下，则需要取两者中的较大值 */
             if broken > notbroken {
@@ -115,7 +109,6 @@ class ViewController: UIViewController {
         else{
             var low  = 1  //记录最低楼层
             var high = n
-//            var ret : Int = Int.max //记录每次返回的最小值
             while low+1 < high {  //当鸡蛋2个或者超过2个的时候 第一次肯定是二分法扔 从楼层中间扔
                 let x = (low + high)/2
                 //然后套用公式
@@ -133,10 +126,6 @@ class ViewController: UIViewController {
                     high = x
                 }
             }
-            //! 我们找到最佳的投放鸡蛋的楼层后，开始计算
-            //! 1. 在left扔鸡蛋，计算  f 在 left 下方 和 在上方的 最坏的情况，也就是求最大值
-            //! 2. 同理，在 right 扔鸡蛋，计算  f 在 right 下方 和 在上方的 最坏的情况，也就是求最大值
-            //! 3. 最后，我们拿到其中的最小值，那就是我们要求的最小步骤，加上1，也就是本次的操作数。
             ans = 1 + min(max(numberOfTimes2(k - 1, low - 1), numberOfTimes2(k, n - low)), max(numberOfTimes2(k - 1, high - 1), numberOfTimes2(k, n - high)))
         }
         
@@ -169,7 +158,7 @@ class ViewController: UIViewController {
             for i in 0...number-1{
                 let st = tempArr[i] //当前物品
                 
-                if st.weight > weights{ //当前物品 比现有的背包重量还大  取没有这个物品时，的最大容量
+                if st.weight > weights{
                     var weightsArr : Array<Something> = []
                     if i > 0 {
                         weightsArr = Array(tempArr[0...i-1])
@@ -177,15 +166,11 @@ class ViewController: UIViewController {
                     knapsackDic["\(weights)\(number)"] = knapsackProblem(weights, weightsArr.count, weightsArr)
                 }
                 else{
-                    var setArr : Array<Something> = []  //不管 放不放都要递归的  去掉当前物品的数组
+                    var setArr : Array<Something> = []
                     if i > 0 {
                         setArr = Array(tempArr[0...i-1])
                     }
-                    //放了
-    //                    let setArr : Array<Something>  = tempArr.removeSubrange( i..<tempArr.count) as! Array<Something> //直接删除  或者强转或报错和崩溃
                     let setSomething = st.value + knapsackProblem(weights - st.weight, setArr.count, setArr)
-                    
-                        //没放
                     let noSetSomething = knapsackProblem(weights, setArr.count, setArr)
                     
                     if knapsackDic["\(weights)\(i+1)"] == nil || knapsackDic["\(weights)\(i+1)"] == 0{
