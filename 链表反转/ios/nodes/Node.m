@@ -9,25 +9,26 @@
 
 @implementation Node
 
-// 链表反转   临2当空新1当2
+// 链表反转  当取给  初始新  2空12  临当新当
 + (Node *)reverseList:(Node *)root
 {
     // 定义遍历指针，初始化为头结点
         Node *current = root;
         // 反转后的链表头部
         Node *newH = nil;
+    
         // 遍历链表
         while (current != nil) {  // 注意始终保持  节点负值
             // 记录下一个结点
-            Node *temp = current.next;
+            Node *temp = current.next;  // ⚠️临时取2
             // 当前结点的next指向新链表头部
-            current.next = newH;
+            current.next = newH;    // ⚠️当前取 null 节点
             // 更改新链表头部为当前结点
 //            newH.value = p.value;
 //            newH.next = p.next;
-            newH = current;
+            newH = current;      //  ⚠️新取1
             // 移动p指针
-            current = temp;
+            current = temp;     //   当前⚠️取2
         }
     
         // 返回反转后的链表头结点
