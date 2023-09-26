@@ -42,8 +42,8 @@ class ViewController: UIViewController {
          */
         
         //递归方法内 仍然有只一个返回值。
-        let x : Int = self.maxDepth(one)//深度
-        print(x)
+//        let x : Int = self.maxDepth(one)//深度
+//        print(x)
         
 //        let mirror = self.Mirror(one)//镜像
 //        print(mirror ?? (Any).self)
@@ -76,6 +76,7 @@ class ViewController: UIViewController {
         if (pRoot != nil){
             pRoot?.left = self.Mirror(pRoot!.left)
             pRoot?.right = self.Mirror(pRoot!.right)
+            
             let temp = pRoot!.left ?? nil
             pRoot!.left = pRoot!.right ?? nil
             pRoot!.right = temp

@@ -67,17 +67,17 @@
 //思路：定义 两个指针 动态取值范围。 然后比较中间值
 - (NSInteger)findValue:(NSArray *)array andValue:(NSNumber *)val
 {
-    NSInteger right = array.count-1;
-    NSInteger left = 0;
+    NSInteger right = array.count-1;// 取值范围   会动态变化
+    NSInteger left = 0;   //取值范围   会动态变化
     
     while (left <=right) {
         NSInteger mid = (left + right)/2;
-        NSNumber* key = array[mid];
+        NSNumber* key = array[mid];  //取出来的value  做对比用
         
-        if([key intValue]> [val intValue]){
-            right = mid-1;
+        if([key intValue]> [val intValue]){ //左边
+            right = mid-1;  //取值范围变小
         }
-        else if([key intValue] < [val intValue]){
+        else if([key intValue] < [val intValue]){ // 右边
             left = mid +1;
         }
         else{
@@ -116,14 +116,15 @@
         while (low < high && [array[high] integerValue] >= key.integerValue){//必须要大于等于  才能换
             --high;
         }
-        if (low < high) {
+        if (low < high) { //指针没有挨着
+            //找到之后交换左右的值
             NSNumber *temp = array[low];
             [array replaceObjectAtIndex:low withObject:array[high]];
             [array replaceObjectAtIndex:high withObject:temp];
         }
     }
     
-    NSNumber *temp = array[high];
+    NSNumber *temp = array[high];//这个时候 high=low 然后将key给到中间
     [array replaceObjectAtIndex:high withObject:array[end]];
     [array replaceObjectAtIndex:end withObject:temp];
     

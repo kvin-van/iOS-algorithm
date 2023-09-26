@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         return ""
     }
     
-    // MARK: -  打印二进制整数
+    // MARK: -  打印二进制整数   关键点 先取余再除2
     func printIntNumber(no : Int) -> String
     {
         if no == 0{
@@ -70,8 +70,8 @@ class ViewController: UIViewController {
         var i = no
         var string : String = ""
         while i>0{
-            let last = String(i%2)
-            i = i/2
+            let last = String(i%2)  //取余
+            i = i/2   //关键 十进制转二进制就是不断的除2
             string.insert(contentsOf: last, at: string.startIndex)
         }
         
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
     // MARK: -  局部最小值问题
     /*
      无序数组，任意两个相邻的数不等，找到存在局部最小的位置
-     0位置比1位置小，则0位置是局部最小，n-2位置比n-1位置小，返回n-1位置
+     边缘部分：0位置比1位置小，则0位置是局部最小，n-1位置比n-2位置小，返回n-1位置
      中间位置i，需满足 i 比左边小也比右边小，则i位置是局部最小
      局部最小位置存在即可返回，不用返回所有的位置
      */

@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import <Swift.h>
 @interface ViewController ()
 
 @end
@@ -17,14 +17,19 @@
     [super viewDidLoad];
     
     //最长斐波那契数列
-    NSLog(@"%ld",(unsigned long)[self fibonacciOfLengh:@[@1,@3,@7,@11,@12,@14,@18,@25,@39]]);
-    NSLog(@"%ld",(unsigned long)[self fibonacciOfLengh:@[@1,@2,@3,@4,@5,@6,@7,@8]]);
+//    NSLog(@"%ld",(unsigned long)[self fibonacciOfLengh:@[@1,@3,@7,@11,@12,@14,@18,@25,@39]]);
+//    NSLog(@"%ld",(unsigned long)[self fibonacciOfLengh:@[@1,@2,@3,@4,@5,@6,@7,@8]]);
+//    
+//    //第N个斐波那契数列的值
+//    NSLog(@"第N位斐波那契数列 数值为：%ld",(unsigned long)[self fibonacciN:6]);
     
-    //第N个斐波那契数列的值
-    NSLog(@"第N位斐波那契数列 数值为：%ld",(unsigned long)[self fibonacciN:6]);
     //数组里的斐波那契数列下标  仅2位
     NSLog(@"1下标%@",[self fibonacciArray:@[@7,@3,@4] and:11]);
     NSLog(@"2下标%@",[self fibonacciArray:@[@3,@3,@4] and:6]);
+    
+    HashObject *hashObject = [HashObject new];
+    NSLog(@"swift%@", [hashObject twoSum:@[@7,@3,@4] :11]);
+    NSLog(@"swift%@", [hashObject twoSum2:@[@7,@3,@4] :11]);
 }
 
 #pragma mark - 最长斐波那契数列
@@ -34,14 +39,17 @@
 输入: [1,3,7,11,12,14,18]
 输出: 3
 原因: [1,11,12],[3,11,14],[7,11,18]*/
-
+/*
+①for循环中,for(int i = 0;i < 6;i++)和for(int i = 0;i < 6;++i)效果一样
+② while(i++)是先用i的初始化值做循环变量再i+1
+而while(++i)是先用i的初始值+1,再循环*/
 - (NSInteger )fibonacciOfLengh:(NSArray*)array
 {
     NSInteger length = 0;
     NSInteger flag = 2;
     for (int i = 0; i < (int)array.count-1; ++i) {
         NSNumber *num = array[i];
-        for (int j = i+1; j <  (int)array.count-1; j++) {
+        for (int j = i+1; j <  (int)array.count-1; j++) {//如果 写NSUInteger j 就会数组越界。 因为NSUInteger -- 不会是负数
             NSNumber *x = array[j];
             NSNumber *y = @([num integerValue] + [x integerValue]);
             if([array containsObject:y]){
@@ -54,7 +62,7 @@
             else{//不包含继续循环
             }
         }
-        if(flag > length && flag > 2){
+        if(flag > length && flag > 2){ //大于2 和真正有值的情况下 才负值
             length = flag;
         }
         flag =2;
@@ -84,10 +92,12 @@
 输出: [0,2]
 输入: [3,3]  6
 输出: [0,1]
+ 输入： [20,70,110,150], 90
+ 输出: [0,1]
 */
 - (NSArray *)fibonacciArray:(NSArray *)array and:(int)target
 {
-    NSMutableDictionary *saveDic = @{}.mutableCopy;
+    NSMutableDictionary *saveDic = @{}.mutableCopy;  //采用哈希降低时间复杂度
     for (int i=0; i<array.count; i++) {
         NSNumber *x = array[i];
         NSNumber *y = [NSNumber numberWithInt:target - x.intValue];

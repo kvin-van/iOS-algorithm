@@ -14,6 +14,7 @@
 		D5194652282E20A000E8C791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5194651282E20A000E8C791 /* Assets.xcassets */; };
 		D5194655282E20A000E8C791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5194653282E20A000E8C791 /* LaunchScreen.storyboard */; };
 		D5194658282E20A000E8C791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5194657282E20A000E8C791 /* main.m */; };
+		D58E8A0C2A08ABB300805C56 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E8A0B2A08ABB300805C56 /* Hash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		D5194654282E20A000E8C791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5194656282E20A000E8C791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5194657282E20A000E8C791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D58E8A0A2A08ABB300805C56 /* 算法-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "算法-Bridging-Header.h"; sourceTree = "<group>"; };
+		D58E8A0B2A08ABB300805C56 /* Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +70,13 @@
 				D5194649282E209E00E8C791 /* SceneDelegate.m */,
 				D519464B282E209E00E8C791 /* ViewController.h */,
 				D519464C282E209E00E8C791 /* ViewController.m */,
+				D58E8A0B2A08ABB300805C56 /* Hash.swift */,
 				D519464E282E209E00E8C791 /* Main.storyboard */,
 				D5194651282E20A000E8C791 /* Assets.xcassets */,
 				D5194653282E20A000E8C791 /* LaunchScreen.storyboard */,
 				D5194656282E20A000E8C791 /* Info.plist */,
 				D5194657282E20A000E8C791 /* main.m */,
+				D58E8A0A2A08ABB300805C56 /* 算法-Bridging-Header.h */,
 			);
 			path = "算法";
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				TargetAttributes = {
 					D5194641282E209E00E8C791 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -146,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58E8A0C2A08ABB300805C56 /* Hash.swift in Sources */,
 				D519464D282E209E00E8C791 /* ViewController.m in Sources */,
 				D5194647282E209E00E8C791 /* AppDelegate.m in Sources */,
 				D5194658282E20A000E8C791 /* main.m in Sources */,
@@ -290,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VXR43ZV554;
@@ -310,6 +318,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kvin.van.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "算法/算法-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = Swift.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -319,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VXR43ZV554;
@@ -339,6 +352,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kvin.van.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "算法/算法-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = Swift.h;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

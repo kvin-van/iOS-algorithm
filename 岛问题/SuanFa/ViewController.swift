@@ -25,6 +25,7 @@ class ViewController: UIViewController {
      连续的1 为一个岛 递归判断上下左右
      输入：   [[1,0,0,1],[1,0,0,0],[0,0,1,1]]
      输出： 3
+     思路： 找出1 然后直接带入函数 （1、越界返回   2、是0 返回  3、是1变0    4、上下左右 ）
      */
     func numIslands(grid : NSMutableArray) -> Int
     {
@@ -51,6 +52,7 @@ class ViewController: UIViewController {
         if i >= grid.count || j >= (grid[i] as! Array<Int>).count {
             return
         }
+        
         // 已经是海水了
         var value0  = grid[i]  as! Array<Int>
         if  value0[j] == 0 {

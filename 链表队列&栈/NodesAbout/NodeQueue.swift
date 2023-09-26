@@ -22,7 +22,7 @@ class NodeQueue : Any
             tail = node
         }
         else{
-//            if head?.next == nil{ //第2次的时候 head = tail 所以注了这段代码
+//            if head?.next == nil{ //第2次的时候 head == tail 所以注了这段代码
 //                head?.next = tail
 //            }
             tail?.next = node

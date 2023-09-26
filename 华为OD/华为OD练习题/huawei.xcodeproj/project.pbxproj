@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5764A862A33163D0029B99B /* SearchChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5764A852A33163D0029B99B /* SearchChat.swift */; };
+		D5764A8C2A3318350029B99B /* 1示例1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5764A872A3318350029B99B /* 1示例1.webp */; };
+		D5764A8D2A3318350029B99B /* 1思路.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5764A882A3318350029B99B /* 1思路.webp */; };
+		D5764A8E2A3318350029B99B /* 1示例2.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5764A892A3318350029B99B /* 1示例2.webp */; };
+		D5764A8F2A3318350029B99B /* 1题目.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5764A8A2A3318350029B99B /* 1题目.webp */; };
+		D5764A902A3318350029B99B /* 1描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5764A8B2A3318350029B99B /* 1描述.webp */; };
+		D57C78622A2ED47300DCABCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C78612A2ED47300DCABCB /* AppDelegate.swift */; };
+		D57C78642A2ED47300DCABCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C78632A2ED47300DCABCB /* SceneDelegate.swift */; };
+		D57C78662A2ED47300DCABCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C78652A2ED47300DCABCB /* ViewController.swift */; };
+		D57C78692A2ED47300DCABCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57C78672A2ED47300DCABCB /* Main.storyboard */; };
+		D57C786B2A2ED47700DCABCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57C786A2A2ED47700DCABCB /* Assets.xcassets */; };
+		D57C786E2A2ED47700DCABCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57C786C2A2ED47700DCABCB /* LaunchScreen.storyboard */; };
+		D57C78762A2F427900DCABCB /* FindValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C78752A2F427900DCABCB /* FindValue.swift */; };
+		D57C78782A301F7700DCABCB /* 题目.png.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C78772A301F7700DCABCB /* 题目.png.webp */; };
+		D57C787A2A301F7F00DCABCB /* 描述.png.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C78792A301F7F00DCABCB /* 描述.png.webp */; };
+		D57C787C2A301F8500DCABCB /* 示例.png.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C787B2A301F8500DCABCB /* 示例.png.webp */; };
+		D57C787F2A31A1CF00DCABCB /* IntoArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C787E2A31A1CF00DCABCB /* IntoArray.swift */; };
+		D57C78862A31A20C00DCABCB /* 题目.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C78802A31A20B00DCABCB /* 题目.webp */; };
+		D57C78872A31A20C00DCABCB /* 示例4.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C78812A31A20B00DCABCB /* 示例4.webp */; };
+		D57C78882A31A20C00DCABCB /* 示例2.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C78822A31A20B00DCABCB /* 示例2.webp */; };
+		D57C78892A31A20C00DCABCB /* 描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C78832A31A20B00DCABCB /* 描述.webp */; };
+		D57C788A2A31A20C00DCABCB /* 示例1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C78842A31A20C00DCABCB /* 示例1.webp */; };
+		D57C788B2A31A20C00DCABCB /* 示例3.webp in Resources */ = {isa = PBXBuildFile; fileRef = D57C78852A31A20C00DCABCB /* 示例3.webp */; };
+		D5D9DAB52A36FEF200B7E8B6 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9DAB42A36FEF200B7E8B6 /* Currency.swift */; };
+		D5D9DABA2A37002B00B7E8B6 /* 货币描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAB62A37002B00B7E8B6 /* 货币描述.webp */; };
+		D5D9DABB2A37002B00B7E8B6 /* 货币题目.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAB72A37002B00B7E8B6 /* 货币题目.webp */; };
+		D5D9DABC2A37002B00B7E8B6 /* 货币示例3.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAB82A37002B00B7E8B6 /* 货币示例3.webp */; };
+		D5D9DABD2A37002B00B7E8B6 /* 货币示例1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAB92A37002B00B7E8B6 /* 货币示例1.webp */; };
+		D5D9DAC02A380E4000B7E8B6 /* AboutPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9DABF2A380E4000B7E8B6 /* AboutPort.swift */; };
+		D5D9DAC72A380E7500B7E8B6 /* 端口思路.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAC12A380E7500B7E8B6 /* 端口思路.webp */; };
+		D5D9DAC82A380E7500B7E8B6 /* 端口题目.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAC22A380E7500B7E8B6 /* 端口题目.webp */; };
+		D5D9DAC92A380E7500B7E8B6 /* 端口示例1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAC32A380E7500B7E8B6 /* 端口示例1.webp */; };
+		D5D9DACA2A380E7500B7E8B6 /* 端口示例3.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAC42A380E7500B7E8B6 /* 端口示例3.webp */; };
+		D5D9DACB2A380E7500B7E8B6 /* 端口描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAC52A380E7500B7E8B6 /* 端口描述.webp */; };
+		D5D9DACC2A380E7500B7E8B6 /* 端口示例2.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAC62A380E7500B7E8B6 /* 端口示例2.webp */; };
+		D5D9DACF2A3859B600B7E8B6 /* LogsUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9DACE2A3859B600B7E8B6 /* LogsUpload.swift */; };
+		D5D9DAD42A385DF900B7E8B6 /* 日志题目.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAD02A385DF900B7E8B6 /* 日志题目.webp */; };
+		D5D9DAD52A385DF900B7E8B6 /* 日志描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAD12A385DF900B7E8B6 /* 日志描述.webp */; };
+		D5D9DAD62A385DF900B7E8B6 /* 日志示例1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAD22A385DF900B7E8B6 /* 日志示例1.webp */; };
+		D5D9DAD72A385DF900B7E8B6 /* 日志示例2.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAD32A385DF900B7E8B6 /* 日志示例2.webp */; };
+		D5D9DADA2A396D7C00B7E8B6 /* HashErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9DAD92A396D7C00B7E8B6 /* HashErrorCode.swift */; };
+		D5D9DADE2A396DB500B7E8B6 /* 通信描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DADB2A396DB400B7E8B6 /* 通信描述.webp */; };
+		D5D9DADF2A396DB500B7E8B6 /* 通信示例1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DADC2A396DB400B7E8B6 /* 通信示例1.webp */; };
+		D5D9DAE02A396DB500B7E8B6 /* 通信示例2.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DADD2A396DB400B7E8B6 /* 通信示例2.webp */; };
+		D5D9DAE32A39903A00B7E8B6 /* ShopCoupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9DAE22A39903A00B7E8B6 /* ShopCoupon.swift */; };
+		D5D9DAE82A39998600B7E8B6 /* 商城思路.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAE42A39998500B7E8B6 /* 商城思路.webp */; };
+		D5D9DAE92A39998600B7E8B6 /* 商城示例1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAE52A39998500B7E8B6 /* 商城示例1.webp */; };
+		D5D9DAEA2A39998600B7E8B6 /* 商城题目.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAE62A39998500B7E8B6 /* 商城题目.webp */; };
+		D5D9DAEB2A39998600B7E8B6 /* 商城描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAE72A39998500B7E8B6 /* 商城描述.webp */; };
+		D5D9DAEE2A3AB46900B7E8B6 /* DecryptString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9DAED2A3AB46900B7E8B6 /* DecryptString.swift */; };
+		D5D9DAF42A3AB4AB00B7E8B6 /* 解密示例2.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAEF2A3AB4AA00B7E8B6 /* 解密示例2.webp */; };
+		D5D9DAF52A3AB4AB00B7E8B6 /* 解密题目.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAF02A3AB4AB00B7E8B6 /* 解密题目.webp */; };
+		D5D9DAF62A3AB4AB00B7E8B6 /* 解密示例1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAF12A3AB4AB00B7E8B6 /* 解密示例1.webp */; };
+		D5D9DAF72A3AB4AB00B7E8B6 /* 解密描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAF22A3AB4AB00B7E8B6 /* 解密描述.webp */; };
+		D5D9DAF82A3AB4AB00B7E8B6 /* 解密思路.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAF32A3AB4AB00B7E8B6 /* 解密思路.webp */; };
+		D5D9DAFB2A3AF28D00B7E8B6 /* PokerSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9DAFA2A3AF28D00B7E8B6 /* PokerSort.swift */; };
+		D5D9DB002A3AF57400B7E8B6 /* 扑克牌题目.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAFC2A3AF57400B7E8B6 /* 扑克牌题目.webp */; };
+		D5D9DB012A3AF57400B7E8B6 /* 扑克牌思路.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAFD2A3AF57400B7E8B6 /* 扑克牌思路.webp */; };
+		D5D9DB022A3AF57400B7E8B6 /* 扑克牌示例.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAFE2A3AF57400B7E8B6 /* 扑克牌示例.webp */; };
+		D5D9DB032A3AF57400B7E8B6 /* 扑克牌描述.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5D9DAFF2A3AF57400B7E8B6 /* 扑克牌描述.webp */; };
+		D5EBE1CA2AB164EA0072DF4F /* BoxPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EBE1C92AB164EA0072DF4F /* BoxPlacement.swift */; };
+		D5EBE1CE2AB16B070072DF4F /* 箱子示例1.png.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5EBE1CB2AB16B070072DF4F /* 箱子示例1.png.webp */; };
+		D5EBE1CF2AB16B070072DF4F /* 箱子描述.png.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5EBE1CC2AB16B070072DF4F /* 箱子描述.png.webp */; };
+		D5EBE1D02AB16B070072DF4F /* 箱子题目.png.webp in Resources */ = {isa = PBXBuildFile; fileRef = D5EBE1CD2AB16B070072DF4F /* 箱子题目.png.webp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D5764A852A33163D0029B99B /* SearchChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchChat.swift; sourceTree = "<group>"; };
+		D5764A872A3318350029B99B /* 1示例1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1示例1.webp"; sourceTree = "<group>"; };
+		D5764A882A3318350029B99B /* 1思路.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1思路.webp"; sourceTree = "<group>"; };
+		D5764A892A3318350029B99B /* 1示例2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1示例2.webp"; sourceTree = "<group>"; };
+		D5764A8A2A3318350029B99B /* 1题目.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1题目.webp"; sourceTree = "<group>"; };
+		D5764A8B2A3318350029B99B /* 1描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1描述.webp"; sourceTree = "<group>"; };
+		D57C785E2A2ED47300DCABCB /* huawei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huawei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D57C78612A2ED47300DCABCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D57C78632A2ED47300DCABCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D57C78652A2ED47300DCABCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D57C78682A2ED47300DCABCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D57C786A2A2ED47700DCABCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D57C786D2A2ED47700DCABCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D57C786F2A2ED47700DCABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D57C78752A2F427900DCABCB /* FindValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindValue.swift; sourceTree = "<group>"; };
+		D57C78772A301F7700DCABCB /* 题目.png.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "题目.png.webp"; sourceTree = "<group>"; };
+		D57C78792A301F7F00DCABCB /* 描述.png.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "描述.png.webp"; sourceTree = "<group>"; };
+		D57C787B2A301F8500DCABCB /* 示例.png.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "示例.png.webp"; sourceTree = "<group>"; };
+		D57C787E2A31A1CF00DCABCB /* IntoArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntoArray.swift; sourceTree = "<group>"; };
+		D57C78802A31A20B00DCABCB /* 题目.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "题目.webp"; sourceTree = "<group>"; };
+		D57C78812A31A20B00DCABCB /* 示例4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "示例4.webp"; sourceTree = "<group>"; };
+		D57C78822A31A20B00DCABCB /* 示例2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "示例2.webp"; sourceTree = "<group>"; };
+		D57C78832A31A20B00DCABCB /* 描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "描述.webp"; sourceTree = "<group>"; };
+		D57C78842A31A20C00DCABCB /* 示例1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "示例1.webp"; sourceTree = "<group>"; };
+		D57C78852A31A20C00DCABCB /* 示例3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "示例3.webp"; sourceTree = "<group>"; };
+		D5D9DAB42A36FEF200B7E8B6 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		D5D9DAB62A37002B00B7E8B6 /* 货币描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "货币描述.webp"; sourceTree = "<group>"; };
+		D5D9DAB72A37002B00B7E8B6 /* 货币题目.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "货币题目.webp"; sourceTree = "<group>"; };
+		D5D9DAB82A37002B00B7E8B6 /* 货币示例3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "货币示例3.webp"; sourceTree = "<group>"; };
+		D5D9DAB92A37002B00B7E8B6 /* 货币示例1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "货币示例1.webp"; sourceTree = "<group>"; };
+		D5D9DABF2A380E4000B7E8B6 /* AboutPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPort.swift; sourceTree = "<group>"; };
+		D5D9DAC12A380E7500B7E8B6 /* 端口思路.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "端口思路.webp"; sourceTree = "<group>"; };
+		D5D9DAC22A380E7500B7E8B6 /* 端口题目.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "端口题目.webp"; sourceTree = "<group>"; };
+		D5D9DAC32A380E7500B7E8B6 /* 端口示例1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "端口示例1.webp"; sourceTree = "<group>"; };
+		D5D9DAC42A380E7500B7E8B6 /* 端口示例3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "端口示例3.webp"; sourceTree = "<group>"; };
+		D5D9DAC52A380E7500B7E8B6 /* 端口描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "端口描述.webp"; sourceTree = "<group>"; };
+		D5D9DAC62A380E7500B7E8B6 /* 端口示例2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "端口示例2.webp"; sourceTree = "<group>"; };
+		D5D9DACE2A3859B600B7E8B6 /* LogsUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsUpload.swift; sourceTree = "<group>"; };
+		D5D9DAD02A385DF900B7E8B6 /* 日志题目.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "日志题目.webp"; sourceTree = "<group>"; };
+		D5D9DAD12A385DF900B7E8B6 /* 日志描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "日志描述.webp"; sourceTree = "<group>"; };
+		D5D9DAD22A385DF900B7E8B6 /* 日志示例1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "日志示例1.webp"; sourceTree = "<group>"; };
+		D5D9DAD32A385DF900B7E8B6 /* 日志示例2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "日志示例2.webp"; sourceTree = "<group>"; };
+		D5D9DAD92A396D7C00B7E8B6 /* HashErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashErrorCode.swift; sourceTree = "<group>"; };
+		D5D9DADB2A396DB400B7E8B6 /* 通信描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "通信描述.webp"; sourceTree = "<group>"; };
+		D5D9DADC2A396DB400B7E8B6 /* 通信示例1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "通信示例1.webp"; sourceTree = "<group>"; };
+		D5D9DADD2A396DB400B7E8B6 /* 通信示例2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "通信示例2.webp"; sourceTree = "<group>"; };
+		D5D9DAE22A39903A00B7E8B6 /* ShopCoupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCoupon.swift; sourceTree = "<group>"; };
+		D5D9DAE42A39998500B7E8B6 /* 商城思路.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "商城思路.webp"; sourceTree = "<group>"; };
+		D5D9DAE52A39998500B7E8B6 /* 商城示例1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "商城示例1.webp"; sourceTree = "<group>"; };
+		D5D9DAE62A39998500B7E8B6 /* 商城题目.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "商城题目.webp"; sourceTree = "<group>"; };
+		D5D9DAE72A39998500B7E8B6 /* 商城描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "商城描述.webp"; sourceTree = "<group>"; };
+		D5D9DAED2A3AB46900B7E8B6 /* DecryptString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptString.swift; sourceTree = "<group>"; };
+		D5D9DAEF2A3AB4AA00B7E8B6 /* 解密示例2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "解密示例2.webp"; sourceTree = "<group>"; };
+		D5D9DAF02A3AB4AB00B7E8B6 /* 解密题目.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "解密题目.webp"; sourceTree = "<group>"; };
+		D5D9DAF12A3AB4AB00B7E8B6 /* 解密示例1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "解密示例1.webp"; sourceTree = "<group>"; };
+		D5D9DAF22A3AB4AB00B7E8B6 /* 解密描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "解密描述.webp"; sourceTree = "<group>"; };
+		D5D9DAF32A3AB4AB00B7E8B6 /* 解密思路.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "解密思路.webp"; sourceTree = "<group>"; };
+		D5D9DAFA2A3AF28D00B7E8B6 /* PokerSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerSort.swift; sourceTree = "<group>"; };
+		D5D9DAFC2A3AF57400B7E8B6 /* 扑克牌题目.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "扑克牌题目.webp"; sourceTree = "<group>"; };
+		D5D9DAFD2A3AF57400B7E8B6 /* 扑克牌思路.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "扑克牌思路.webp"; sourceTree = "<group>"; };
+		D5D9DAFE2A3AF57400B7E8B6 /* 扑克牌示例.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "扑克牌示例.webp"; sourceTree = "<group>"; };
+		D5D9DAFF2A3AF57400B7E8B6 /* 扑克牌描述.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "扑克牌描述.webp"; sourceTree = "<group>"; };
+		D5EBE1C92AB164EA0072DF4F /* BoxPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxPlacement.swift; sourceTree = "<group>"; };
+		D5EBE1CB2AB16B070072DF4F /* 箱子示例1.png.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "箱子示例1.png.webp"; sourceTree = "<group>"; };
+		D5EBE1CC2AB16B070072DF4F /* 箱子描述.png.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "箱子描述.png.webp"; sourceTree = "<group>"; };
+		D5EBE1CD2AB16B070072DF4F /* 箱子题目.png.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "箱子题目.png.webp"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D57C785B2A2ED47300DCABCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5764A842A33160F0029B99B /* 对称字符串 */ = {
+			isa = PBXGroup;
+			children = (
+				D5764A872A3318350029B99B /* 1示例1.webp */,
+				D5764A8A2A3318350029B99B /* 1题目.webp */,
+				D5764A8B2A3318350029B99B /* 1描述.webp */,
+				D5764A882A3318350029B99B /* 1思路.webp */,
+				D5764A892A3318350029B99B /* 1示例2.webp */,
+				D5764A852A33163D0029B99B /* SearchChat.swift */,
+			);
+			path = "对称字符串";
+			sourceTree = "<group>";
+		};
+		D57C78552A2ED47300DCABCB = {
+			isa = PBXGroup;
+			children = (
+				D57C78602A2ED47300DCABCB /* huawei */,
+				D57C785F2A2ED47300DCABCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D57C785F2A2ED47300DCABCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D57C785E2A2ED47300DCABCB /* huawei.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D57C78602A2ED47300DCABCB /* huawei */ = {
+			isa = PBXGroup;
+			children = (
+				D57C78612A2ED47300DCABCB /* AppDelegate.swift */,
+				D57C78632A2ED47300DCABCB /* SceneDelegate.swift */,
+				D57C78652A2ED47300DCABCB /* ViewController.swift */,
+				D5EBE1C82AB164860072DF4F /* 箱子之形摆放 */,
+				D5D9DAF92A3AF24100B7E8B6 /* 整理扑克牌 */,
+				D5D9DAEC2A3AB42B00B7E8B6 /* 字符串解密 */,
+				D5D9DAE12A39900300B7E8B6 /* 商城优惠 */,
+				D5D9DAD82A396D3000B7E8B6 /* 通信误码 */,
+				D5D9DACD2A38597C00B7E8B6 /* 日志采集 */,
+				D5D9DABE2A380DC800B7E8B6 /* 关联端口组合并 */,
+				D5D9DAB32A36FEAC00B7E8B6 /* 货币计算 */,
+				D5764A842A33160F0029B99B /* 对称字符串 */,
+				D57C787D2A31A18B00DCABCB /* 单入口空闲区域 */,
+				D57C78752A2F427900DCABCB /* FindValue.swift */,
+				D57C78772A301F7700DCABCB /* 题目.png.webp */,
+				D57C78792A301F7F00DCABCB /* 描述.png.webp */,
+				D57C787B2A301F8500DCABCB /* 示例.png.webp */,
+				D57C78672A2ED47300DCABCB /* Main.storyboard */,
+				D57C786A2A2ED47700DCABCB /* Assets.xcassets */,
+				D57C786C2A2ED47700DCABCB /* LaunchScreen.storyboard */,
+				D57C786F2A2ED47700DCABCB /* Info.plist */,
+			);
+			path = huawei;
+			sourceTree = "<group>";
+		};
+		D57C787D2A31A18B00DCABCB /* 单入口空闲区域 */ = {
+			isa = PBXGroup;
+			children = (
+				D57C78812A31A20B00DCABCB /* 示例4.webp */,
+				D57C78822A31A20B00DCABCB /* 示例2.webp */,
+				D57C78832A31A20B00DCABCB /* 描述.webp */,
+				D57C78842A31A20C00DCABCB /* 示例1.webp */,
+				D57C78852A31A20C00DCABCB /* 示例3.webp */,
+				D57C78802A31A20B00DCABCB /* 题目.webp */,
+				D57C787E2A31A1CF00DCABCB /* IntoArray.swift */,
+			);
+			path = "单入口空闲区域";
+			sourceTree = "<group>";
+		};
+		D5D9DAB32A36FEAC00B7E8B6 /* 货币计算 */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9DAB92A37002B00B7E8B6 /* 货币示例1.webp */,
+				D5D9DAB82A37002B00B7E8B6 /* 货币示例3.webp */,
+				D5D9DAB72A37002B00B7E8B6 /* 货币题目.webp */,
+				D5D9DAB62A37002B00B7E8B6 /* 货币描述.webp */,
+				D5D9DAB42A36FEF200B7E8B6 /* Currency.swift */,
+			);
+			path = "货币计算";
+			sourceTree = "<group>";
+		};
+		D5D9DABE2A380DC800B7E8B6 /* 关联端口组合并 */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9DAC22A380E7500B7E8B6 /* 端口题目.webp */,
+				D5D9DAC12A380E7500B7E8B6 /* 端口思路.webp */,
+				D5D9DAC42A380E7500B7E8B6 /* 端口示例3.webp */,
+				D5D9DAC32A380E7500B7E8B6 /* 端口示例1.webp */,
+				D5D9DAC52A380E7500B7E8B6 /* 端口描述.webp */,
+				D5D9DAC62A380E7500B7E8B6 /* 端口示例2.webp */,
+				D5D9DABF2A380E4000B7E8B6 /* AboutPort.swift */,
+			);
+			path = "关联端口组合并";
+			sourceTree = "<group>";
+		};
+		D5D9DACD2A38597C00B7E8B6 /* 日志采集 */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9DAD22A385DF900B7E8B6 /* 日志示例1.webp */,
+				D5D9DAD32A385DF900B7E8B6 /* 日志示例2.webp */,
+				D5D9DAD02A385DF900B7E8B6 /* 日志题目.webp */,
+				D5D9DAD12A385DF900B7E8B6 /* 日志描述.webp */,
+				D5D9DACE2A3859B600B7E8B6 /* LogsUpload.swift */,
+			);
+			path = "日志采集";
+			sourceTree = "<group>";
+		};
+		D5D9DAD82A396D3000B7E8B6 /* 通信误码 */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9DADB2A396DB400B7E8B6 /* 通信描述.webp */,
+				D5D9DADC2A396DB400B7E8B6 /* 通信示例1.webp */,
+				D5D9DADD2A396DB400B7E8B6 /* 通信示例2.webp */,
+				D5D9DAD92A396D7C00B7E8B6 /* HashErrorCode.swift */,
+			);
+			path = "通信误码";
+			sourceTree = "<group>";
+		};
+		D5D9DAE12A39900300B7E8B6 /* 商城优惠 */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9DAE72A39998500B7E8B6 /* 商城描述.webp */,
+				D5D9DAE62A39998500B7E8B6 /* 商城题目.webp */,
+				D5D9DAE52A39998500B7E8B6 /* 商城示例1.webp */,
+				D5D9DAE42A39998500B7E8B6 /* 商城思路.webp */,
+				D5D9DAE22A39903A00B7E8B6 /* ShopCoupon.swift */,
+			);
+			path = "商城优惠";
+			sourceTree = "<group>";
+		};
+		D5D9DAEC2A3AB42B00B7E8B6 /* 字符串解密 */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9DAF12A3AB4AB00B7E8B6 /* 解密示例1.webp */,
+				D5D9DAEF2A3AB4AA00B7E8B6 /* 解密示例2.webp */,
+				D5D9DAF02A3AB4AB00B7E8B6 /* 解密题目.webp */,
+				D5D9DAF22A3AB4AB00B7E8B6 /* 解密描述.webp */,
+				D5D9DAF32A3AB4AB00B7E8B6 /* 解密思路.webp */,
+				D5D9DAED2A3AB46900B7E8B6 /* DecryptString.swift */,
+			);
+			path = "字符串解密";
+			sourceTree = "<group>";
+		};
+		D5D9DAF92A3AF24100B7E8B6 /* 整理扑克牌 */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9DAFF2A3AF57400B7E8B6 /* 扑克牌描述.webp */,
+				D5D9DAFC2A3AF57400B7E8B6 /* 扑克牌题目.webp */,
+				D5D9DAFD2A3AF57400B7E8B6 /* 扑克牌思路.webp */,
+				D5D9DAFE2A3AF57400B7E8B6 /* 扑克牌示例.webp */,
+				D5D9DAFA2A3AF28D00B7E8B6 /* PokerSort.swift */,
+			);
+			path = "整理扑克牌";
+			sourceTree = "<group>";
+		};
+		D5EBE1C82AB164860072DF4F /* 箱子之形摆放 */ = {
+			isa = PBXGroup;
+			children = (
+				D5EBE1CC2AB16B070072DF4F /* 箱子描述.png.webp */,
+				D5EBE1CB2AB16B070072DF4F /* 箱子示例1.png.webp */,
+				D5EBE1CD2AB16B070072DF4F /* 箱子题目.png.webp */,
+				D5EBE1C92AB164EA0072DF4F /* BoxPlacement.swift */,
+			);
+			path = "箱子之形摆放";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D57C785D2A2ED47300DCABCB /* huawei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D57C78722A2ED47700DCABCB /* Build configuration list for PBXNativeTarget "huawei" */;
+			buildPhases = (
+				D57C785A2A2ED47300DCABCB /* Sources */,
+				D57C785B2A2ED47300DCABCB /* Frameworks */,
+				D57C785C2A2ED47300DCABCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = huawei;
+			productName = huawei;
+			productReference = D57C785E2A2ED47300DCABCB /* huawei.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D57C78562A2ED47300DCABCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D57C785D2A2ED47300DCABCB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D57C78592A2ED47300DCABCB /* Build configuration list for PBXProject "huawei" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D57C78552A2ED47300DCABCB;
+			productRefGroup = D57C785F2A2ED47300DCABCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D57C785D2A2ED47300DCABCB /* huawei */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D57C785C2A2ED47300DCABCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D9DAE92A39998600B7E8B6 /* 商城示例1.webp in Resources */,
+				D5D9DAF62A3AB4AB00B7E8B6 /* 解密示例1.webp in Resources */,
+				D5764A8F2A3318350029B99B /* 1题目.webp in Resources */,
+				D5D9DABC2A37002B00B7E8B6 /* 货币示例3.webp in Resources */,
+				D5D9DAF82A3AB4AB00B7E8B6 /* 解密思路.webp in Resources */,
+				D57C787A2A301F7F00DCABCB /* 描述.png.webp in Resources */,
+				D5D9DAF52A3AB4AB00B7E8B6 /* 解密题目.webp in Resources */,
+				D5EBE1D02AB16B070072DF4F /* 箱子题目.png.webp in Resources */,
+				D57C786E2A2ED47700DCABCB /* LaunchScreen.storyboard in Resources */,
+				D5764A8E2A3318350029B99B /* 1示例2.webp in Resources */,
+				D57C786B2A2ED47700DCABCB /* Assets.xcassets in Resources */,
+				D5764A902A3318350029B99B /* 1描述.webp in Resources */,
+				D5D9DAC72A380E7500B7E8B6 /* 端口思路.webp in Resources */,
+				D5764A8D2A3318350029B99B /* 1思路.webp in Resources */,
+				D5D9DAF42A3AB4AB00B7E8B6 /* 解密示例2.webp in Resources */,
+				D5D9DB022A3AF57400B7E8B6 /* 扑克牌示例.webp in Resources */,
+				D5D9DAE82A39998600B7E8B6 /* 商城思路.webp in Resources */,
+				D57C788A2A31A20C00DCABCB /* 示例1.webp in Resources */,
+				D5D9DB012A3AF57400B7E8B6 /* 扑克牌思路.webp in Resources */,
+				D5D9DAE02A396DB500B7E8B6 /* 通信示例2.webp in Resources */,
+				D5D9DB002A3AF57400B7E8B6 /* 扑克牌题目.webp in Resources */,
+				D5EBE1CE2AB16B070072DF4F /* 箱子示例1.png.webp in Resources */,
+				D5D9DACC2A380E7500B7E8B6 /* 端口示例2.webp in Resources */,
+				D5D9DAD62A385DF900B7E8B6 /* 日志示例1.webp in Resources */,
+				D5EBE1CF2AB16B070072DF4F /* 箱子描述.png.webp in Resources */,
+				D57C788B2A31A20C00DCABCB /* 示例3.webp in Resources */,
+				D5D9DACB2A380E7500B7E8B6 /* 端口描述.webp in Resources */,
+				D5764A8C2A3318350029B99B /* 1示例1.webp in Resources */,
+				D5D9DAD42A385DF900B7E8B6 /* 日志题目.webp in Resources */,
+				D5D9DACA2A380E7500B7E8B6 /* 端口示例3.webp in Resources */,
+				D57C78872A31A20C00DCABCB /* 示例4.webp in Resources */,
+				D57C78692A2ED47300DCABCB /* Main.storyboard in Resources */,
+				D57C78782A301F7700DCABCB /* 题目.png.webp in Resources */,
+				D5D9DAC92A380E7500B7E8B6 /* 端口示例1.webp in Resources */,
+				D5D9DABB2A37002B00B7E8B6 /* 货币题目.webp in Resources */,
+				D5D9DABA2A37002B00B7E8B6 /* 货币描述.webp in Resources */,
+				D5D9DADF2A396DB500B7E8B6 /* 通信示例1.webp in Resources */,
+				D5D9DAD72A385DF900B7E8B6 /* 日志示例2.webp in Resources */,
+				D57C787C2A301F8500DCABCB /* 示例.png.webp in Resources */,
+				D5D9DB032A3AF57400B7E8B6 /* 扑克牌描述.webp in Resources */,
+				D5D9DAF72A3AB4AB00B7E8B6 /* 解密描述.webp in Resources */,
+				D57C78892A31A20C00DCABCB /* 描述.webp in Resources */,
+				D5D9DAC82A380E7500B7E8B6 /* 端口题目.webp in Resources */,
+				D5D9DAEA2A39998600B7E8B6 /* 商城题目.webp in Resources */,
+				D57C78862A31A20C00DCABCB /* 题目.webp in Resources */,
+				D5D9DADE2A396DB500B7E8B6 /* 通信描述.webp in Resources */,
+				D5D9DAEB2A39998600B7E8B6 /* 商城描述.webp in Resources */,
+				D5D9DABD2A37002B00B7E8B6 /* 货币示例1.webp in Resources */,
+				D57C78882A31A20C00DCABCB /* 示例2.webp in Resources */,
+				D5D9DAD52A385DF900B7E8B6 /* 日志描述.webp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D57C785A2A2ED47300DCABCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D57C78762A2F427900DCABCB /* FindValue.swift in Sources */,
+				D57C787F2A31A1CF00DCABCB /* IntoArray.swift in Sources */,
+				D5D9DAC02A380E4000B7E8B6 /* AboutPort.swift in Sources */,
+				D5D9DAFB2A3AF28D00B7E8B6 /* PokerSort.swift in Sources */,
+				D57C78662A2ED47300DCABCB /* ViewController.swift in Sources */,
+				D5D9DAEE2A3AB46900B7E8B6 /* DecryptString.swift in Sources */,
+				D5764A862A33163D0029B99B /* SearchChat.swift in Sources */,
+				D5EBE1CA2AB164EA0072DF4F /* BoxPlacement.swift in Sources */,
+				D57C78622A2ED47300DCABCB /* AppDelegate.swift in Sources */,
+				D5D9DAB52A36FEF200B7E8B6 /* Currency.swift in Sources */,
+				D5D9DADA2A396D7C00B7E8B6 /* HashErrorCode.swift in Sources */,
+				D5D9DAE32A39903A00B7E8B6 /* ShopCoupon.swift in Sources */,
+				D5D9DACF2A3859B600B7E8B6 /* LogsUpload.swift in Sources */,
+				D57C78642A2ED47300DCABCB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D57C78672A2ED47300DCABCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D57C78682A2ED47300DCABCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D57C786C2A2ED47700DCABCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D57C786D2A2ED47700DCABCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D57C78702A2ED47700DCABCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D57C78712A2ED47700DCABCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D57C78732A2ED47700DCABCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VXR43ZV554;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = huawei/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangbendong.cn.huawei;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D57C78742A2ED47700DCABCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VXR43ZV554;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = huawei/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangbendong.cn.huawei;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D57C78592A2ED47300DCABCB /* Build configuration list for PBXProject "huawei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D57C78702A2ED47700DCABCB /* Debug */,
+				D57C78712A2ED47700DCABCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D57C78722A2ED47700DCABCB /* Build configuration list for PBXNativeTarget "huawei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D57C78732A2ED47700DCABCB /* Debug */,
+				D57C78742A2ED47700DCABCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D57C78562A2ED47300DCABCB /* Project object */;
+}
