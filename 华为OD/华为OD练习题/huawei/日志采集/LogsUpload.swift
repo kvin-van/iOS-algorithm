@@ -18,9 +18,9 @@ class LogsUpload: Any {
         for i in 0..<array.count{ //循环
             firstNo = firstNo + array[i]
             
-            var lastNo = 0
-            for last in 0..<lastArr.count{
-                lastNo = lastNo + lastArr[last] * (lastArr.count - last)
+            var lastNo = 0  //扣分
+            for index in 0..<lastArr.count{
+                lastNo = lastNo + lastArr[index] * (lastArr.count - index)
             }
             
             lastArr.append(array[i])

@@ -14,7 +14,9 @@ class ViewController: UIViewController {
         
         print("结果：\(self.fillArrayBest([0,4,5], 6))")
         print("结果：\(self.fillArrayBest([1,0,0], 3))")
-//        print("结果：\(self.fillArrayBest([0,0,0,0,0,67,0,0], 100))")
+//        print("结果：\(self.fillArrayBest2([0,4,5], 6))")  
+//        print("结果：\(self.fillArrayBest2([1,0,0], 3))")
+        print("结果：\(self.fillArrayBest([0,0,0,0,0,67,0,0], 100))")
     }
 
     /*描述
@@ -44,7 +46,7 @@ class ViewController: UIViewController {
                 nextArr.append(i)
             }
         }
-//        print(nextArr)
+        print(nextArr)//算出 可以替换的坐标 [0, 1, 2, 3, 4, 6, 7]
     
         var tempArr = Array(a)
         var result : Int = 0

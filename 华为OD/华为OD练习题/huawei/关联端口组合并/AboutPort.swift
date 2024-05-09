@@ -13,7 +13,7 @@ class AboutPort: Any {
     //思路：先去重，然后冒泡 ，前一个吞并后一个数组 删除后  重新冒泡
     func aboutPort(_ m : Int,_ array : Array<Array<Int>>) -> String
     {
-        if m>10{
+        if m>10{ //题目要求
             return "\(array)"
         }
 
@@ -38,7 +38,7 @@ class AboutPort: Any {
                 if flagSet.count>=2{ // 可以合并
                     tempArr[index] = Array(Set(tmpArr).union(Set(tmpArr2))).sorted()//并集
                     tempArr.remove(at: j) //删除后一个
-                    index = 0
+                    index = 0  //跳出for循环 重新while循环
                     break;
                 }
             }

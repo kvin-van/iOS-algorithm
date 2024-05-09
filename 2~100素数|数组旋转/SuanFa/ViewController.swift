@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         var array : Array<Int> = []
         
         for x in 2...number{
-            //优化
+            //优化： 大于10的数字如果能被2和5整除肯定不是质数
             if x > 9 && (x%2 == 0 || x%5 == 0) {
                 continue
             }

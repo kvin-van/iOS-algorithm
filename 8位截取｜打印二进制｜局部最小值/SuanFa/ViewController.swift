@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //8位截取
-        _ = self.addEightAction(string: "123456")
+        _ = self.addEightAction("123456")
         
         //打印二进制整数
         _ = self.printIntNumber(no: 1)
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
      输入：  abc
      输出： abc00000
      */
-    func addEightAction(string : String) -> String{
+    func addEightAction(_ string : String) -> String{
         if string.isEmpty{
             return ""
         }
@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         }
         return ""
     }
+    
     
     // MARK: -  打印二进制整数   关键点 先取余再除2
     func printIntNumber(no : Int) -> String

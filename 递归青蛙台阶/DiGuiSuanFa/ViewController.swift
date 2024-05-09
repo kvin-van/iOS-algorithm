@@ -45,12 +45,13 @@ class ViewController: UIViewController {
         result[1] = 1
         result[2] = 2
         if jump <= 2{
-            return result[jump] ?? 0
+            return result[jump]!
         }
+        
         for index in 3...jump{ //方案叠加
             result[index] = result[index - 1]! + result[index - 2]!  // 3 方案= 方案1 + 方案2
         }
-        return result[jump] ?? 0
+        return result[jump]!
     }
 }
 

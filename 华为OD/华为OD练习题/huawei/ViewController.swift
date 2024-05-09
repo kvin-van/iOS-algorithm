@@ -38,21 +38,31 @@ class ViewController: UIViewController {
 //        print("\(sortString("student a am I"))")
 //        print("\(sortString("$bo*y gi!r#l"))")
         
-        //华为OD
+        //华为OD 二维数组最短路径
 //        let find : FindValue = FindValue()
 //        print("\(find.findValue(array:  [[0,3,5,4,2], [2,5,7,8,3], [2,5,4,2,4]]))")
 //        print("\(find.findValue2(array:  [[0,3,5,4,2], [2,5,7,8,3], [2,5,4,2,4]]))") //方法2理解方便
         
-        //华为OD  单入口空闲区域  方法2 更容易理解 ⚠️难
+        //华为OD  文件夹：（单入口空闲区域⚠️难）  方法2 更容易理解
 //        let intoArr =  IntoArray()
+        //示例 1234
 //        print("\(intoArr.findEntrance(4, 4, [["X","X","X","X"],["X","O","O","X"],["X","O","O","X"],["X","O","X","X"]]))")
 //        print("\(intoArr.findEntrance(4, 5, [["X","X","X","X","X"],["O","O","O","O","X"],["X","O","O","O","X"],["X","O","X","X","O"]]))")
 //        print("\(intoArr.findEntrance(5, 4, [["X","X","X","X"],["X","O","O","O"],["X","O","O","O"],["X","O","O","X"],["X","X","X","X"]]))")
 //        print("\(intoArr.findEntrance(5, 4,[["X","X","X","X"],["X","O","O","O"],["X","X","X","X"],["X","O","O","O"],["X","X","X","X"]]))")
+//        //示例 1234
 //        print("\(intoArr.findEntrance2(4, 4, [["X","X","X","X"],["X","O","O","X"],["X","O","O","X"],["X","O","X","X"]]))")
 //        print("\(intoArr.findEntrance2(4, 5, [["X","X","X","X","X"],["O","O","O","O","X"],["X","O","O","O","X"],["X","O","X","X","O"]]))")
 //        print("\(intoArr.findEntrance2(5, 4, [["X","X","X","X"],["X","O","O","O"],["X","O","O","O"],["X","O","O","X"],["X","X","X","X"]]))")
 //        print("\(intoArr.findEntrance2(5, 4,[["X","X","X","X"],["X","O","O","O"],["X","X","X","X"],["X","O","O","O"],["X","X","X","X"]]))")
+        /*
+         XXOXX
+         XOOOX
+         XXXXX
+         XOXOX
+         XOXOX  */
+//        print("\(intoArr.findEntrance(5, 5,[["X","X","O","X","X"],["X","O","O","O","X"],["X","X","X","X","X"],["X","O","X","O","X"],["X","O","X","O","X"]]))")
+//        print("\(intoArr.findEntrance2(5, 5,[["X","X","O","X","X"],["X","O","O","O","X"],["X","X","X","X","X"],["X","O","X","O","X"],["X","O","X","O","X"]]))")
         
         //华为OD  货币计算
 //        let currency = Currency()
@@ -64,7 +74,7 @@ class ViewController: UIViewController {
         //华为OD单词倒序
 //       print("\(overturn("yM eman si boB ? I ma enif."))")
         
-        //华为OD对称字符串  ⚠️难
+        //华为OD  对称字符串  ⚠️难
 //        let searchChat = SearchChat()
 //        print("\(searchChat.searchChatAction((1,0)))")
 //        print("\(searchChat.searchChatAction((2,1)))")
@@ -129,9 +139,9 @@ class ViewController: UIViewController {
         
         //华为OD 箱子之形摆放
         // 来回摇摆位输出
-//        let box = BoxPlacement()
-//        box.placementBox2("ABCDEFG", 3)
-//        box.placementBox("ABCDEFG", 3)
+        let box = BoxPlacement()
+        box.placementBox2("ABCDEFG", 3)
+        box.placementBox("ABCDEFG", 3)
 
     }
     
@@ -256,7 +266,7 @@ class ViewController: UIViewController {
      */
     func sortString(_ string : String) -> String {
         var array : Array = Array(string)
-        array.append(" ")
+        array.append(" ")// 为了最后一步 既不是字母也不是数字
         var array2 : Array<String> = []
         
         var str : String = ""
@@ -371,7 +381,7 @@ class ViewController: UIViewController {
     }
     
     //MARK: - 华为OD报纸 匿名信 分界线
-    //给定2个字符串  用空格分割成数组  数组1 是否包含数组2 字母的顺序可以乱序
+    //给定2个字符串  用空格分割成数组  数组1 是否包含数组2 字母的 顺序可以乱序
     // 测试用例
 //        let line1 = "ab cd"  line2 = "ab"
     //true

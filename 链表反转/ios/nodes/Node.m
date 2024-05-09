@@ -23,8 +23,8 @@
             // 当前结点的next指向新链表头部
             current.next = newH;    // ⚠️当前取 null 节点
             // 更改新链表头部为当前结点
-//            newH.value = p.value;
-//            newH.next = p.next;
+//            current.value = newH.value;
+//            current.next = newH.next;
             newH = current;      //  ⚠️新取1
             current = temp;     //   当前⚠️取2
         }

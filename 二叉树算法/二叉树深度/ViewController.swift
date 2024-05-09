@@ -48,10 +48,14 @@ class ViewController: UIViewController {
 //        let mirror = self.Mirror(one)//镜像
 //        print(mirror ?? (Any).self)
         
-        let result :TreeNode = self.lowestCommon(one, 4, 7)//算最低的共同节点
-        print(result.val)
+//        let result :TreeNode = self.lowestCommon(one, 4, 7)//算最低的共同节点
+//        print(result.val)
         let result2 = self.lowestCommonAncestor(one, 4, 7)//算最低的共同节点
         print(result2)
+        
+        // 二叉树从下至上遍历 （字符串形态）
+//        runloopTreeNode("1(2(3(4,5)),6(7,8(9,10)))");
+//        runloopTreeNode("1(2(3(4,5)),6(7,8(9,10(12,13),11(14,15))),16(17))");
     }
 
     // MARK: - 二叉树深度
@@ -93,12 +97,13 @@ class ViewController: UIViewController {
         arrayTwo.append(root!)
         arrayOne = self.searchValue(array: arrayOne, val: one, node: root!)
         arrayTwo = self.searchValue(array: arrayTwo, val: two, node: root!)
-//        print(" 路径1 :\(arrayOne)")
-//        print(" 路径2 :\(arrayTwo)")
+        print(" 路径1 :\(arrayOne)")
+        print(" 路径2 :\(arrayTwo)")
         for index  in (0 ..< arrayOne.count).reversed(){
             let node : TreeNode = arrayOne[index]
             for index2  in (0 ..< arrayTwo.count).reversed(){
                 let node2 : TreeNode = arrayTwo[index2]
+                print("\(node.val ) & \(node2.val)")
                 if(node.val == node2.val){
                     return node.val
                 }
@@ -147,5 +152,82 @@ class ViewController: UIViewController {
             
         return root!
         }
+    
+    // MARK: - 二叉树从下至上遍历 （字符串形态）
+    /*
+     【样例输入】
+     1(2(3(4,5)),6(7,8(9,10)))，字符串内没有空格
+     【样例输出】
+     4 5 9 10
+     3 7 8
+     2 6
+     1
+     输出:4 5 9 10 3 7 8 2 6 1
+     */
+    func runloopTreeNode(_ string:String)-> Void
+    {
+        var myString = string;
+        var resultArr:Array<(Int,Array<String>)> = [];
+        while myString.count>0 {
+            let value = backDeepAndValue(&myString);
+//            print("深度和内容",value)
+//            print("更新字符串",myString)
+            if(resultArr.count == 0){
+                resultArr.append(value)
+                continue
+            }
+            for (index,tuple) in resultArr.enumerated(){ //按深度插入
+                if value.0 > tuple.0{
+                    resultArr.insert(value, at: index)
+                    break;
+                }
+                else if tuple.0 == value.0{
+                    if index == resultArr.count-1{
+                        resultArr.append(value)
+                    }else{
+                        continue
+                    }
+                }
+                if index == resultArr.count-1{ // 最后
+                    resultArr.append(value)
+                }
+            }
+//            print("resultArr:",resultArr);
+        }
+        var printArr:Array<String> = []
+        for tuple in resultArr{
+            printArr.append(contentsOf: tuple.1);
+        }
+        print(printArr); //结果输出
+    }
+    
+    //返回深度和字符串数组
+    func backDeepAndValue(_ string: inout String)->(Int,Array<String>){
+        var tree:(deep:Int,value:Array<String>) = (deep:0,value:[]);
+        
+        if(string.count<=1){
+            tree.deep = 0;
+            tree.value = [string];
+            string = "";
+            return tree
+        }
+        
+        var start = 0
+        for (index,chat) in string.enumerated(){
+            if(chat == "("){
+                tree.deep += 1
+                start = index
+            }else if chat == ")"{
+                let startIndex = string.index(string.startIndex,offsetBy: start+1)
+                let endIndex = string.index(string.startIndex,offsetBy: index)
+                let subString = string[startIndex..<endIndex]// 或者  string.dropFirst(4).prefix(9-4)
+                let array = subString.components(separatedBy: ",")
+                tree.value = array;
+                string = String(string.dropLast(string.count - index + (index-start)) + string.dropFirst(index+1)) // 删除
+                break;
+            }
+        }
+        return tree;
+    }
 }
 

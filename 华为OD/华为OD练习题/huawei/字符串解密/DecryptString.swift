@@ -30,25 +30,25 @@ class DecryptString: Any {
         if tempStr.count > 0 { //末尾都是符合 g--z的
             str1Arr.append(tempStr)
         }
-//        print(str1Arr)
+        print(str1Arr)
         
         let str2Arr = Array(Set(string2))
         
-        var result = ""
+        var resultStr = ""
         for str in str1Arr{
             if str.count > str2Arr.count{
                 continue
             }
             else{//都是小于等于字符2数组count的了
-                if str.count >= result.count{ //越大越接近 字符2数组count   等于 属于最后也留下
-                    result = str
+                if str.count >= resultStr.count{ //越大越接近 字符2数组count   等于 属于最后也留下
+                    resultStr = str
                 }
             }
         }
-        if result.count == 0{
-            result = "Not Found"
+        if resultStr.count == 0{
+            resultStr = "Not Found"
         }
-        return result
+        return resultStr
     }
     
 }

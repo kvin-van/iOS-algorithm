@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             let lie = grid[i] as! Array<Int>
             for j in 0...lie.count-1 {
                 let value  = grid[i]  as! Array<Int>
-                if value[j] == 1 {
+                if value[j] == 1 { //有陆地了
                     result += 1
                     dfs(grid: grid, i: i, j: j)
                 }
@@ -52,13 +52,13 @@ class ViewController: UIViewController {
         if i >= grid.count || j >= (grid[i] as! Array<Int>).count {
             return
         }
-        
         // 已经是海水了
         var value0  = grid[i]  as! Array<Int>
         if  value0[j] == 0 {
             return
         }
-//        // 将 (i, j) 变成海水
+        
+//        将 (i, j) 变成海水
         value0[j] = 0
         grid.replaceObject(at: i, with: value0)
         print("位置\(i)\(j)")

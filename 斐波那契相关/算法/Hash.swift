@@ -9,7 +9,6 @@ import Foundation
 
 @objcMembers public  class HashObject : NSObject
 {
-    
      @objc var dic : Dictionary <Int , Int> = [:]
     
       @objc func twoSum ( _ numbers: [Int],  _ target: Int) -> [Int] {

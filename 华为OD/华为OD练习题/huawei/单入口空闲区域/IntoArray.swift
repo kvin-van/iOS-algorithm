@@ -52,7 +52,7 @@ class IntoArray : Any
                 }
             }
         }
-//        print(intoArr)
+//        print(intoArr)  // 筛选入口 完成✅
         if intoArr.count < 1{
             return "NULL"
         }
@@ -62,7 +62,7 @@ class IntoArray : Any
         for arr in intoArr{  //循环找到的入口
             var nmArr = Array(array)
             tempIntoArr = Array(intoArr)
-            tempIntoArr.removeAll { array1 in
+            tempIntoArr.removeAll { array1 in  //删除要代入的计算的入口  留下剩余的入口
                 array1 == arr
             }
             var flag = 1
@@ -171,8 +171,8 @@ class IntoArray : Any
 //        print(intoArr)
         var resultArr : [Array<Int>] = []
         
-        for val in intoArr{
-            var tempIntoArr : [(Int,Int)] = intoArr //去掉当前的 临时入口
+        for val in intoArr{ //循环全部入口
+            var tempIntoArr : [(Int,Int)] = intoArr //去掉当前的 入口
             tempIntoArr.removeAll { item in
                 item == val
             }
@@ -191,16 +191,32 @@ class IntoArray : Any
         if resultArr.count < 1{
             return "NULL"
         }
-        else if resultArr.count == 1{
-            let backArr = resultArr[0]
-            return "\(backArr[0]) \(backArr[1]) \(backArr[2])"
-        }
-        else{
-            return "\(resultArr[0][2])"
+        else{ //有效区域
+            var maxValue : (length:Int,count:Int) = (0,0) //最大区域值 和 重复数
+            var ansArr : Array<Int> = [] // 答案
+            for array in resultArr{ //循环找出最多的 1个或者多个
+                if maxValue.length < array[2]{
+                    maxValue.length = array[2]
+                    maxValue.count = 1
+                    ansArr = array
+                }
+                else if maxValue.length == array[2]{ // 最大 且一样
+                    maxValue.count += 1
+                }
+            }
+            
+            if maxValue.count > 1{ // 最大的区域 是多个
+                return "\(maxValue.length)"
+            }else{ //只有一个最大
+                return "\(ansArr[0]) \(ansArr[1]) \(ansArr[2])"
+            }
         }
     }
     
-    // n，m  array把O改成X的数组  数量flag  intoArr不包含自己入口的入口数组，坐标value
+    // n，m  array把O改成X的数组
+    //数量flag
+    //intoArr不包含自己入口的入口数组，
+    //当前坐标value
     func findOAction2(_ n : Int , _ m : Int ,_ array : inout Array<Array<String>>,_ flag: inout Int ,_ intoArr : inout Array<(Int,Int)>, _ value:(Int,Int))
     {
         //判断
@@ -213,11 +229,11 @@ class IntoArray : Any
         if isContains {
             flag = -1
         }
-        
         if flag == -1 {
             return
         }
-        // +1  改X
+        
+        // +1  符合条件 改X
         if x == "O" && flag != -1{
             flag = flag+1
             array[value.0][value.1] = "X"
