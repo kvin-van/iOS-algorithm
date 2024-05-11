@@ -16,7 +16,8 @@ class ViewController: UIViewController {
                 findRoot([1,2,3,4,5,6,7,8,9,10,11,12])
         findRoot([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16])
                 
-        }
+    }
+    
             /*
              题目：给定一个完全二叉树
                                   1
@@ -83,7 +84,7 @@ class ViewController: UIViewController {
         print(resultStr)
     }
     
-    //方式2 采用元组  把元组模拟 成 二叉树结构 添加到数组里，  ⚠️肯能还有些问题。
+    //方式2 采用元组  把元组模拟 成 二叉树结构 添加到数组里，  ⚠️还有些问题。
     func findRoot2(_ array: Array<Int>) ->Void
     {
         var index = 1
